@@ -12,7 +12,7 @@ Circle circle2 = new Circle(radius2);
 double sum = circle1 + circle2;
 double difference = circle1 - circle2;
 
-Console.WriteLine($"Area of circle 1 is {circle1.area}");
-Console.WriteLine($"Area of circle 2 is {circle2.area}");
-Console.WriteLine($"Sum of the area of the 2 circles is {sum}");
-Console.WriteLine($"Difference of the area of the 2 circles is {difference}");
+Console.WriteLine($"Area of circle 1 is {Math.Round(circle1.area,2)}");
+Console.WriteLine($"Area of circle 2 is {Math.Round(circle2.area, 2)}");
+Console.WriteLine($"Sum of the area of the 2 circles is {Math.Round(sum, 2)}");
+Console.WriteLine($"Difference of the area of the 2 circles is {Math.Abs(Math.Round(difference, 2))}");
